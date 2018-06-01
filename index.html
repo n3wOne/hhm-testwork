@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Коментарии</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+</head>
+
+<body>
+<section id="head">
+<div class="container">
+	<div class="row row-m-b">
+	<div class="col-md-12">
+		<div class="header"><img src="images/logo.png" alt="" width="300"></div>
+	  </div>
+	</div>
+<div class="row row-m-b">
+	<div class="col-md-12 text-center"><img src="images/contact_icon.png" alt="" width="250"></div>	
+</div>
+<div class="row row-m-b">
+	<div class="col-xs-12 col-md-5">
+		<div class="row row-m-b">
+			<div class="col-md-12"><label for="nickname">Имя <span class="red">*</span><span class="tip"></span></label><input data-valid='nick' class='field-validation' required="required" type="text" id="nickname"></div>
+			<div class="col-md-12 row row-m-b"></div>
+			<div class="col-md-12"><label for="email">E-Mail <span class="red">*</span><span class="tip"></span></label><input data-valid='email' class='field-validation' required="required" type="text" id="email"></div>
+		</div>
+	</div>
+	
+	<div class="col-xs-12 col-md-6 offset-md-1">
+			<div class="row row-m-b">
+				<div class="col-md-12"><label for="comment">Комментарий <span class="red">*</span><span class="tip"></span></label><textarea data-valid='comment' class='field-validation' required="required" rows="3" id="comment" ></textarea></div>
+			</div>
+		</div>	
+	
+</div>
+	
+	<div class="row row-m-b row-m-t"><div class="col-md-3 offset-md-8 offset-lg-9 col-xs-12"><button class="send" disabled>Записать</button></div></div>		
+</div>
+<div style="margin-bottom: 25px;">&nbsp;</div>
+</section>
+<section id="comments">
+<div class="container">
+	<div style="margin-bottom: 95px;">&nbsp;</div>
+	<div class="row row-m-b">
+		<div class="col-md-12 col-xs-12 text-center"><h1>Выводим комментарии</h1></div>
+	</div>
+	<div class="row row-m-b comments-list text-center" style="padding-bottom: 50px; padding-top: 65px;">
+	</div>
+</div>
+</section>
+<footer>
+	<div class="container">
+		<div class="row row-m-b">
+		<div class="col-md-6 col-sm-6 col-xs-12"><a href=""><img src="images/logo.png" height="50" alt=""></a></div>
+		<div class="col-md-3 col-sm-3 col-xs-12 offset-3"><a href=""><img class="round" src="images/vk.png" alt=""></a>
+				<a href=""><img class="round" src="images/f.png" alt=""></a>
+		</div>
+		</div>
+	</div>
+</footer>
+<div id="messages"></div>
+</body>
+<script src="js/script.js"></script>
+</html>
